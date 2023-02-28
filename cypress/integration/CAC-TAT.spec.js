@@ -34,7 +34,7 @@ beforeEach(function(){
             .should('have.value','')
     })
 
-    it.only('exibe mensagem de erro quando o telefone se torna obrigatório mas não é preenchido antes do envio do formulário',function(){
+    it('exibe mensagem de erro quando o telefone se torna obrigatório mas não é preenchido antes do envio do formulário',function(){
         cy.get('#firstName').type('Murilo Osnei')
         cy.get('#lastName').type('Poloni Demito')
         cy.get('#email').type('teste@emailinvalido.com')
