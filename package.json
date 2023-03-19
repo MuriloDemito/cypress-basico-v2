@@ -5,7 +5,9 @@
   "main": "src/index.html",
   "scripts": {
     "cy:open": "cypress open",
-    "test": "cypress run"
+    "cy:open:mobile":"cypress open --config viewportWidth=410  viewportHeight=860",
+    "test": "cypress run",
+    "test:mobile": "cypress open --config viewportWidth=410  viewportHeight=860 "
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,6 @@
   "license": "MIT",
   "homepage": "https://github.com/wlsf82/cypress-basico-v2#readme",
   "devDependencies": {
-    "cypress": "^9.7.0"
+    "cypress": "^12.8.1"
   }
 }
