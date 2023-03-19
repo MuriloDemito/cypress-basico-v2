@@ -149,7 +149,7 @@ beforeEach(function(){
     })
 
     it('Verifica que a política de privacidade abre em outra aba sem a necessidade de um clique', function(){
-        cy.get('#privacy a').should('have.attr', 'target', '_blank')
+        cy.get('#privacy b').should('have.attr', 'target', '_blank')
     })
 
     it('Acessa a página da política de privacidade removendo o target e então clicando no link', function(){
@@ -157,7 +157,7 @@ beforeEach(function(){
             .invoke('removeAttr', 'target')
             .click()
 
-        cy.contains('Talking About Testin').should('be.visible')
+        cy.contains('Talking About Testing').should('be.visible')
     })
   })
   
