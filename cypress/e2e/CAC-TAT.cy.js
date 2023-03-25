@@ -1,5 +1,4 @@
 describe('Central de Atendimento ao Cliente TAT', function() {
-
     const THREE_SECONDS_IN_MS = 3000
 
 beforeEach(function(){
